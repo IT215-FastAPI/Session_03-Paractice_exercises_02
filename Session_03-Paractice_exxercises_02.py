@@ -16,8 +16,12 @@ def get_books():
 
 # Sử dụng lambda
 # @app.get("/books/available")
-# def get_available_books(books, True):
-#     return_books = utils.get_return_book(books, True)
+# def get_available_books():
+#     return utils.get_return_book(books, True)
+
+# @app.get("/books/borrowed")
+# def get_borrowed_books():
+#     return utils.get_return_book(books, False)
 
 # Sử dụng list comprehension
 @app.get("/books/available")
@@ -32,8 +36,6 @@ def get_borrowed_books():
 
 
 # Sử dụng vòng lặp for
-# 
-
 # @app.get("/books/available")
 # def get_available_books():
 #     result = []
